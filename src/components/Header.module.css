@@ -61,16 +61,3 @@
         /* TODO: Implement mobile menu */
     }
 }
-
-.appointmentBtn {
-    background-color: #003366;
-    /* Deep Navy for high contrast */
-    color: #ffffff;
-    border: 1px solid #003366;
-}
-
-.appointmentBtn:hover {
-    background-color: #002244;
-    /* Even darker on hover */
-    color: #ffffff;
-}

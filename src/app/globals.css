@@ -24,7 +24,12 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   margin-bottom: 1rem;
   color: var(--primary-color);
@@ -73,6 +78,17 @@ ul {
   background-color: #138496;
 }
 
+.btn-appointment {
+  background-color: #003366;
+  color: #ffffff;
+  border: 1px solid #003366;
+}
+
+.btn-appointment:hover {
+  background-color: #002244;
+  color: #ffffff;
+}
+
 .section {
   padding: 60px 0;
 }
@@ -94,7 +110,7 @@ ul {
   color: white;
   padding: 15px;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   align-items: center;
   justify-content: center;

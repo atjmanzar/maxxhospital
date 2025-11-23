@@ -20,7 +20,7 @@ export default function Hero() {
                             <Phone size={18} />
                             Call {siteConfig.phone}
                         </a>
-                        <Link href="/appointment" className="btn btn-secondary">
+                        <Link href="/appointment" className="btn btn-appointment">
                             Book Appointment
                         </Link>
                     </div>
