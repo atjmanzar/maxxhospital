@@ -80,13 +80,14 @@ ul {
 
 .btn-appointment {
   background-color: #003366;
-  color: #ffffff;
+  color: #ffffff !important;
   border: 1px solid #003366;
+  font-weight: bold !important;
 }
 
 .btn-appointment:hover {
   background-color: #002244;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .section {
