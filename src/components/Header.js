@@ -8,9 +8,13 @@ export default function Header() {
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
                 <div className={styles.logo}>
-                    <Link href="/">
-                        <h1>Maxx Hospital</h1>
-                        <span className={styles.tagline}>& Maternity Centre</span>
+                    <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        {/* User needs to place logo.png in public folder */}
+                        <img src="/logo.png" alt="Maxx Hospital Logo" style={{ height: '50px', width: 'auto' }} />
+                        <div>
+                            <h1>Maxx Hospital</h1>
+                            <span className={styles.tagline}>& Maternity Centre</span>
+                        </div>
                     </Link>
                 </div>
 
