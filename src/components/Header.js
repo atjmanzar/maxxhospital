@@ -25,7 +25,7 @@ export default function Header() {
                         <li><Link href="/doctors">Doctors</Link></li>
                         <li><Link href="/departments">Departments</Link></li>
                         <li><Link href="/services">Services</Link></li>
-                        <li><Link href="/appointment" className="btn btn-primary">Book Appointment</Link></li>
+                        <li><Link href="/appointment" className={`btn ${styles.appointmentBtn}`}>Book Appointment</Link></li>
                     </ul>
                 </nav>
 
