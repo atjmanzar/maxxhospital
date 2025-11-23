@@ -1,0 +1,99 @@
+.pageTitle {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imageWrapper {
+    height: 200px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder {
+    font-size: 4rem;
+    color: #adb5bd;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.degrees {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.specialization {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.designation {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.timing {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: auto;
+}

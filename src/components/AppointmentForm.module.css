@@ -1,0 +1,80 @@
+.form {
+    background: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.successMessage {
+    text-align: center;
+    background: white;
+    padding: 60px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.successMessage h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.successMessage p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        padding: 20px;
+    }
+}

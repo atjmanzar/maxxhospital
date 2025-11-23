@@ -1,0 +1,34 @@
+{
+    "name": "Maxx Hospital & Maternity Centre",
+    "address": "SS Tower, 371/B, Bypass Road, Mirzahadi Pura, Mau, Uttar Pradesh 275101",
+    "phone": "063910 04302",
+    "location": "Mau, Uttar Pradesh",
+    "rating": 4.7,
+    "email": "contact@maxxhospital.com",
+    "emergency_phone": "063910 04302",
+    "founders": [
+        {
+            "name": "Dr. Founder One",
+            "degrees": "MBBS, MD (Medicine)",
+            "designation": "Medical Director",
+            "message": "At Maxx Hospital, we are committed to providing the highest quality healthcare to the people of Mau. Our vision is to create a world-class medical facility that is accessible to everyone. We believe in treating every patient with compassion and respect.",
+            "short_message": "Committed to providing the highest quality healthcare to the people of Mau.",
+            "image": "/images/founder1.jpg"
+        },
+        {
+            "name": "Dr. Founder Two",
+            "degrees": "MBBS, MS (Obs & Gynae)",
+            "designation": "Director of Maternity",
+            "message": "Maternity care is at the heart of what we do. We strive to ensure safe deliveries and healthy beginnings for every mother and child. Our dedicated team is here to support you through every step of your journey.",
+            "short_message": "Maternity care is at the heart of what we do. Ensuring safe deliveries and healthy beginnings.",
+            "image": "/images/founder2.jpg"
+        }
+    ],
+    "why_choose_us": [
+        "24/7 Emergency Services",
+        "Expert Team of Doctors",
+        "Advanced Medical Technology",
+        "Compassionate Patient Care",
+        "Affordable Treatment"
+    ]
+}

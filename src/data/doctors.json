@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "name": "Dr. Founder One",
+        "degrees": "MBBS, MD (Medicine)",
+        "specialization": "General Medicine",
+        "designation": "Medical Director",
+        "opd_timing": "10:00 AM - 2:00 PM",
+        "bio": "Senior Consultant with over 15 years of experience in General Medicine.",
+        "image": "/images/founder1.jpg",
+        "is_founder": true
+    },
+    {
+        "id": "2",
+        "name": "Dr. Founder Two",
+        "degrees": "MBBS, MS (Obs & Gynae)",
+        "specialization": "Gynecology & Obstetrics",
+        "designation": "Director of Maternity",
+        "opd_timing": "11:00 AM - 3:00 PM",
+        "bio": "Expert in high-risk pregnancies and laparoscopic surgeries.",
+        "image": "/images/founder2.jpg",
+        "is_founder": true
+    },
+    {
+        "id": "3",
+        "name": "Dr. Amit Kumar",
+        "degrees": "MBBS, MS (Ortho)",
+        "specialization": "Orthopedics",
+        "designation": "Senior Consultant",
+        "opd_timing": "4:00 PM - 8:00 PM",
+        "bio": "Specialist in joint replacement and trauma care.",
+        "image": "/images/doctor_placeholder.jpg",
+        "is_founder": false
+    },
+    {
+        "id": "4",
+        "name": "Dr. Sneha Gupta",
+        "degrees": "MBBS, DCH",
+        "specialization": "Pediatrics",
+        "designation": "Consultant",
+        "opd_timing": "9:00 AM - 1:00 PM",
+        "bio": "Dedicated pediatrician with a focus on newborn care.",
+        "image": "/images/doctor_placeholder.jpg",
+        "is_founder": false
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": "gen-med",
+        "title": "General Medicine",
+        "description": "Comprehensive care for all general health issues, fevers, and chronic diseases.",
+        "icon": "Stethoscope"
+    },
+    {
+        "id": "maternity",
+        "title": "Maternity & Obstetrics",
+        "description": "Complete care for expecting mothers, from prenatal checkups to safe delivery.",
+        "icon": "Baby"
+    },
+    {
+        "id": "gynae",
+        "title": "Gynecology",
+        "description": "Expert treatment for women's health issues and reproductive health.",
+        "icon": "User"
+    },
+    {
+        "id": "peds",
+        "title": "Pediatrics",
+        "description": "Specialized care for infants, children, and adolescents.",
+        "icon": "Smile"
+    },
+    {
+        "id": "ortho",
+        "title": "Orthopedics",
+        "description": "Treatment for bone, joint, and muscle disorders, including fractures.",
+        "icon": "Activity"
+    },
+    {
+        "id": "ent",
+        "title": "ENT",
+        "description": "Diagnosis and treatment of Ear, Nose, and Throat conditions.",
+        "icon": "Ear"
+    },
+    {
+        "id": "derma",
+        "title": "Dermatology",
+        "description": "Care for skin, hair, and nail diseases.",
+        "icon": "Sun"
+    },
+    {
+        "id": "emergency",
+        "title": "Emergency & Trauma",
+        "description": "24/7 emergency services for critical care and trauma cases.",
+        "icon": "Ambulance"
+    },
+    {
+        "id": "pathology",
+        "title": "Pathology & Diagnostics",
+        "description": "Advanced lab services for accurate diagnosis.",
+        "icon": "Microscope"
+    },
+    {
+        "id": "pharmacy",
+        "title": "Pharmacy",
+        "description": "In-house pharmacy available 24/7.",
+        "icon": "Pill"
+    },
+    {
+        "id": "icu",
+        "title": "ICU",
+        "description": "Intensive Care Unit with advanced monitoring for critical patients.",
+        "icon": "HeartPulse"
+    }
+]

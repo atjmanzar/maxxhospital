@@ -1,0 +1,129 @@
+.pageTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.storySection {
+    margin-bottom: 60px;
+}
+
+.storyContent {
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.storyContent p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.visionMission {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.foundersList {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.founderCard {
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    align-items: flex-start;
+}
+
+.founderImage {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagePlaceholder {
+    font-size: 3rem;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.founderDetails {
+    flex: 1;
+}
+
+.founderDetails h3 {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.degrees {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.designation {
+    display: block;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.message {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.message p {
+    font-style: italic;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .founderCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .message {
+        text-align: left;
+    }
+}
