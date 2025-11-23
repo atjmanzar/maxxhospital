@@ -27,7 +27,7 @@ export default function AdminLogin() {
             <div className={styles.loginBox}>
                 <h1>Admin Login</h1>
                 {error && <p className={styles.error}>{error}</p>}
-                <form onSubmit={handleLogin}>
+                <form onSubmit={handleLogin} autoComplete="off">
                     <div className={styles.formGroup}>
                         <label>Username</label>
                         <input
@@ -35,7 +35,8 @@ export default function AdminLogin() {
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
-                            placeholder="admin"
+                            placeholder="Username"
+                            autoComplete="off"
                         />
                     </div>
                     <div className={styles.formGroup}>
@@ -45,7 +46,8 @@ export default function AdminLogin() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
-                            placeholder="admin123"
+                            placeholder="Password"
+                            autoComplete="new-password"
                         />
                     </div>
                     <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Login</button>
