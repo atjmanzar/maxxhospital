@@ -47,11 +47,12 @@ export default function AdminDashboard() {
         department: '',
         story: '',
         rating: 5,
-        featured: false
+        featured: false,
+        videoUrl: ''
     });
 
     const handleAddTestimonialClick = () => {
-        setTestimonialForm({ name: '', initials: '', department: '', story: '', rating: 5, featured: false });
+        setTestimonialForm({ name: '', initials: '', department: '', story: '', rating: 5, featured: false, videoUrl: '' });
         setEditingTestimonial(null);
         setShowAddTestimonial(true);
     };
@@ -355,6 +356,15 @@ export default function AdminDashboard() {
                                             placeholder="Share the patient experience..."
                                             rows="4"
                                             style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #ddd' }}
+                                        />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>Video URL (YouTube Embed Link)</label>
+                                        <input
+                                            type="text"
+                                            value={testimonialForm.videoUrl || ''}
+                                            onChange={e => setTestimonialForm({ ...testimonialForm, videoUrl: e.target.value })}
+                                            placeholder="https://www.youtube.com/embed/..."
                                         />
                                     </div>
                                     <div className={styles.formGroup}>
