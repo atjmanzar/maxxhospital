@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "Priya Sharma",
+        "initials": "PS",
+        "photo": "",
+        "department": "Maternity",
+        "story": "The maternity care at Maxx Hospital is exceptional. The doctors and nurses were so supportive during my delivery. I felt safe and well-cared for throughout the entire process.",
+        "rating": 5,
+        "date": "2023-10-15",
+        "featured": true,
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        "id": "2",
+        "name": "Rahul Verma",
+        "initials": "RV",
+        "photo": "",
+        "department": "Emergency Care",
+        "story": "I was rushed to the emergency ward late at night. The response time was incredible. The team stabilized me quickly and the treatment was top-notch. Highly recommended.",
+        "rating": 5,
+        "date": "2023-11-02",
+        "featured": true,
+        "videoUrl": ""
+    },
+    {
+        "id": "3",
+        "name": "Anita Desai",
+        "initials": "AD",
+        "photo": "",
+        "department": "Pediatrics",
+        "story": "Dr. Gupta is amazing with kids. My son was very scared, but the doctor made him feel comfortable. The diagnosis was accurate and he recovered very fast.",
+        "rating": 4,
+        "date": "2023-09-20",
+        "featured": true,
+        "videoUrl": ""
+    },
+    {
+        "id": "4",
+        "name": "Suresh Yadav",
+        "initials": "SY",
+        "photo": "",
+        "department": "General Medicine",
+        "story": "Clean facilities and professional staff. I visited for a general checkup and was impressed by the hygiene and organization of the hospital.",
+        "rating": 5,
+        "date": "2023-12-05",
+        "featured": false,
+        "videoUrl": ""
+    },
+    {
+        "id": "5",
+        "name": "Meera Patel",
+        "initials": "MP",
+        "photo": "",
+        "department": "Gynecology",
+        "story": "Very understanding and knowledgeable doctors. They listened to my concerns patiently and provided the best treatment plan.",
+        "rating": 5,
+        "date": "2023-11-18",
+        "featured": false,
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
+]

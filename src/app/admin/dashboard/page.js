@@ -2,16 +2,18 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Users, Activity, Settings, LogOut, Upload, X } from 'lucide-react';
+import { Users, Activity, Settings, LogOut, Upload, X, MessageSquare } from 'lucide-react';
 import styles from './page.module.css';
 import doctorsData from '@/data/doctors.json';
 import servicesData from '@/data/services.json';
+import testimonialsData from '@/data/testimonials.json';
 
 export default function AdminDashboard() {
     const router = useRouter();
     const [activeTab, setActiveTab] = useState('doctors');
     const [doctors, setDoctors] = useState(doctorsData);
     const [services, setServices] = useState(servicesData);
+    const [testimonials, setTestimonials] = useState(testimonialsData);
 
     useEffect(() => {
         const auth = localStorage.getItem('adminAuth');
@@ -35,6 +37,51 @@ export default function AdminDashboard() {
         degrees: '',
         image: ''
     });
+
+    // --- Testimonials Management ---
+    const [showAddTestimonial, setShowAddTestimonial] = useState(false);
+    const [editingTestimonial, setEditingTestimonial] = useState(null);
+    const [testimonialForm, setTestimonialForm] = useState({
+        name: '',
+        initials: '',
+        department: '',
+        story: '',
+        rating: 5,
+        featured: false
+    });
+
+    const handleAddTestimonialClick = () => {
+        setTestimonialForm({ name: '', initials: '', department: '', story: '', rating: 5, featured: false });
+        setEditingTestimonial(null);
+        setShowAddTestimonial(true);
+    };
+
+    const handleEditTestimonialClick = (testimonial) => {
+        setTestimonialForm(testimonial);
+        setEditingTestimonial(testimonial.id);
+        setShowAddTestimonial(true);
+    };
+
+    const handleSaveTestimonial = (e) => {
+        e.preventDefault();
+        if (editingTestimonial) {
+            setTestimonials(testimonials.map(t => t.id === editingTestimonial ? { ...testimonialForm, id: editingTestimonial } : t));
+            alert('Testimonial updated successfully (Simulation)');
+        } else {
+            const id = (testimonials.length + 1).toString();
+            const date = new Date().toISOString().split('T')[0];
+            setTestimonials([...testimonials, { ...testimonialForm, id, date }]);
+            alert('Testimonial added successfully (Simulation)');
+        }
+        setShowAddTestimonial(false);
+        setEditingTestimonial(null);
+    };
+
+    const handleDeleteTestimonial = (id) => {
+        if (confirm('Are you sure you want to delete this testimonial?')) {
+            setTestimonials(testimonials.filter(t => t.id !== id));
+        }
+    };
 
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
@@ -101,6 +148,12 @@ export default function AdminDashboard() {
                         <Activity size={20} /> Services
                     </button>
                     <button
+                        className={`${styles.navItem} ${activeTab === 'testimonials' ? styles.active : ''}`}
+                        onClick={() => setActiveTab('testimonials')}
+                    >
+                        <MessageSquare size={20} /> Testimonials
+                    </button>
+                    <button
                         className={`${styles.navItem} ${activeTab === 'settings' ? styles.active : ''}`}
                         onClick={() => setActiveTab('settings')}
                     >
@@ -120,6 +173,11 @@ export default function AdminDashboard() {
                     {activeTab === 'doctors' && !showAddDoctor && (
                         <button className="btn btn-primary" onClick={handleAddClick}>
                             Add New Doctor
+                        </button>
+                    )}
+                    {activeTab === 'testimonials' && !showAddTestimonial && (
+                        <button className="btn btn-primary" onClick={handleAddTestimonialClick}>
+                            Add New Testimonial
                         </button>
                     )}
                 </header>
@@ -248,6 +306,114 @@ export default function AdminDashboard() {
                             </tbody>
                         </table>
                     </div>
+                )}
+
+                {activeTab === 'testimonials' && (
+                    <>
+                        {showAddTestimonial && (
+                            <div className={styles.formCard}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                                    <h3>{editingTestimonial ? 'Edit Testimonial' : 'Add New Testimonial'}</h3>
+                                    <button onClick={() => setShowAddTestimonial(false)} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                                        <X size={24} />
+                                    </button>
+                                </div>
+                                <form onSubmit={handleSaveTestimonial}>
+                                    <div className={styles.formGroup}>
+                                        <label>Patient Name</label>
+                                        <input
+                                            type="text"
+                                            required
+                                            value={testimonialForm.name}
+                                            onChange={e => setTestimonialForm({ ...testimonialForm, name: e.target.value, initials: e.target.value.split(' ').map(n => n[0]).join('').toUpperCase().substring(0, 2) })}
+                                            placeholder="John Doe"
+                                        />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>Department</label>
+                                        <select
+                                            value={testimonialForm.department}
+                                            onChange={e => setTestimonialForm({ ...testimonialForm, department: e.target.value })}
+                                            required
+                                            style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #ddd' }}
+                                        >
+                                            <option value="">Select Department</option>
+                                            <option value="Maternity">Maternity</option>
+                                            <option value="Emergency Care">Emergency Care</option>
+                                            <option value="Pediatrics">Pediatrics</option>
+                                            <option value="General Medicine">General Medicine</option>
+                                            <option value="Gynecology">Gynecology</option>
+                                            <option value="Orthopedics">Orthopedics</option>
+                                        </select>
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>Story</label>
+                                        <textarea
+                                            required
+                                            value={testimonialForm.story}
+                                            onChange={e => setTestimonialForm({ ...testimonialForm, story: e.target.value })}
+                                            placeholder="Share the patient experience..."
+                                            rows="4"
+                                            style={{ width: '100%', padding: '10px', borderRadius: '8px', border: '1px solid #ddd' }}
+                                        />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label>Rating (1-5)</label>
+                                        <input
+                                            type="number"
+                                            min="1"
+                                            max="5"
+                                            value={testimonialForm.rating}
+                                            onChange={e => setTestimonialForm({ ...testimonialForm, rating: parseInt(e.target.value) })}
+                                        />
+                                    </div>
+                                    <div className={styles.formGroup}>
+                                        <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                                            <input
+                                                type="checkbox"
+                                                checked={testimonialForm.featured}
+                                                onChange={e => setTestimonialForm({ ...testimonialForm, featured: e.target.checked })}
+                                            />
+                                            Feature on Home Page
+                                        </label>
+                                    </div>
+                                    <button type="submit" className="btn btn-primary">
+                                        {editingTestimonial ? 'Update Testimonial' : 'Save Testimonial'}
+                                    </button>
+                                </form>
+                            </div>
+                        )}
+
+                        {!showAddTestimonial && (
+                            <div className={styles.tableWrapper}>
+                                <table className={styles.table}>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Department</th>
+                                            <th>Rating</th>
+                                            <th>Featured</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {testimonials.map(t => (
+                                            <tr key={t.id}>
+                                                <td>{t.name}</td>
+                                                <td>{t.department}</td>
+                                                <td>{t.rating} ★</td>
+                                                <td>{t.featured ? 'Yes' : 'No'}</td>
+                                                <td>
+                                                    <button className={styles.actionBtn} onClick={() => handleEditTestimonialClick(t)}>Edit</button>
+                                                    <button className={`${styles.actionBtn} ${styles.delete}`} onClick={() => handleDeleteTestimonial(t.id)}>Delete</button>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+                    </>
                 )}
 
                 {activeTab === 'settings' && (

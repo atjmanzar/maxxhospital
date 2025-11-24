@@ -69,6 +69,42 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {/* Featured Testimonials Carousel */}
+            <section className="section" style={{ background: 'linear-gradient(to bottom, #f0f8ff, #ffffff)' }}>
+                <div className="container">
+                    <h2 className={styles.sectionTitle}>Featured Patient Experiences</h2>
+
+                    <div className={styles.carouselContainer}>
+                        <div className={styles.carouselTrack}>
+                            {require('@/data/testimonials.json')
+                                .filter(t => t.featured)
+                                .map((testimonial) => (
+                                    <div key={testimonial.id} className={styles.carouselCard}>
+                                        <div className={styles.testimonialHeader}>
+                                            <div className={styles.testimonialAvatar}>
+                                                {testimonial.initials}
+                                            </div>
+                                            <div>
+                                                <h4>{testimonial.name}</h4>
+                                                <span className={styles.testimonialDept}>{testimonial.department}</span>
+                                            </div>
+                                        </div>
+                                        <p className={styles.testimonialQuote}>"{testimonial.story.substring(0, 150)}..."</p>
+                                        <div className={styles.testimonialRating}>
+                                            {[...Array(5)].map((_, i) => (
+                                                <span key={i} style={{ color: i < testimonial.rating ? '#ffc107' : '#ddd' }}>★</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                        </div>
+                    </div>
+
+                    <div style={{ textAlign: 'center', marginTop: '40px' }}>
+                        <Link href="/testimonials" className="btn btn-primary">Read More Stories →</Link>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
