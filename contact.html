@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Maxx Hospital & Maternity Centre</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: { 50: "#f0f9ff", 100: "#e0f2fe", 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1", 800: "#075985", 900: "#0c4a6e" }
+                    },
+                    fontFamily: { sans: ["Inter", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="logo.jpg" alt="Maxx Hospital Logo" class="w-full h-full object-contain rounded-full">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-medical-900 leading-tight">Maxx Hospital</h1>
+                        <p class="text-xs text-gray-500 font-medium">& Maternity Centre</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-6 font-medium text-gray-700">
+                    <a href="index.html" class="hover:text-medical-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-medical-600 transition">About Us</a>
+                    <a href="facilities.html" class="hover:text-medical-600 transition">Facilities</a>
+                    <a href="specialties.html" class="hover:text-medical-600 transition">Specialties</a>
+                    <a href="doctors.html" class="hover:text-medical-600 transition">Doctors</a>
+                    <a href="appointment.html" class="hover:text-medical-600 transition">Appointment</a>
+                    <a href="contact.html" class="text-medical-600 font-bold">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100 flex flex-col gap-4 pt-4">
+                <a href="index.html" class="block text-gray-700 hover:text-medical-600 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 hover:text-medical-600 font-medium">About Us</a>
+                <a href="facilities.html" class="block text-gray-700 hover:text-medical-600 font-medium">Facilities</a>
+                <a href="specialties.html" class="block text-gray-700 hover:text-medical-600 font-medium">Specialties</a>
+                <a href="doctors.html" class="block text-gray-700 hover:text-medical-600 font-medium">Doctors</a>
+                <a href="appointment.html" class="block text-gray-700 hover:text-medical-600 font-medium">Appointment</a>
+                <a href="contact.html" class="block text-medical-600 font-bold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-medical-900 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Get in Touch</h1>
+            <p class="text-xl text-medical-100">Have questions? Need emergency assistance? Reach out to us anytime.</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col md:flex-row gap-12 mb-16">
+                <!-- Contact Info -->
+                <div class="md:w-1/2 space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-medical-500">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Address</h3>
+                        <p class="text-gray-600">SS Tower, 371/B, Bypass Road,<br>Mirzahadi Pura, Mau, Uttar Pradesh.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-medical-500">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Phone</h3>
+                        <p class="text-gray-600 text-lg font-medium">
+                            <a href="tel:+916391004302" class="hover:text-medical-600">+91 6391004302</a><br>
+                            <a href="tel:+916391004304" class="hover:text-medical-600">+91 6391004304</a>
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-medical-500">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                        <p class="text-gray-600"><a href="mailto:maxxhospitalmau@gmail.com" class="hover:text-medical-600">maxxhospitalmau@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="md:w-1/2 h-96 bg-gray-200 rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.698063852835!2d83.5600!3d25.9500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU3JzAwLjAiTiA4M8KwMzMnMzYuMCJF!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg text-gray-900 mb-2">Do you have an ambulance service?</h4>
+                        <p class="text-gray-600">Yes, we provide 24/7 ambulance services for emergency patient transport.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg text-gray-900 mb-2">Is the pharmacy open 24/7?</h4>
+                        <p class="text-gray-600">Yes, our in-house pharmacy is open round-the-clock to ensure access to medicines at any time.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg text-gray-900 mb-2">Do you accept health insurance?</h4>
+                        <p class="text-gray-600">Yes, we accept major health insurance plans and government schemes like Ayushman Bharat. Please check with our billing desk for specific details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>&copy; 2024 Maxx Hospital & Maternity Centre. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("mobile-menu-btn").addEventListener("click", () => {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
