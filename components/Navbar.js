@@ -23,11 +23,11 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-6 font-medium text-gray-700">
             <Link href="/" className="text-medical-600 font-bold">Home</Link>
             <Link href="/about" className="hover:text-medical-600 transition">About Us</Link>
-            <a href="/facilities.html" className="hover:text-medical-600 transition">Facilities</a>
-            <a href="/specialties.html" className="hover:text-medical-600 transition">Specialties</a>
-            <a href="/doctors.html" className="hover:text-medical-600 transition">Doctors</a>
-            <a href="/appointment.html" className="hover:text-medical-600 transition">Appointment</a>
-            <a href="/contact.html" className="hover:text-medical-600 transition">Contact</a>
+            <Link href="/facilities" className="hover:text-medical-600 transition">Facilities</Link>
+            <Link href="/specialties" className="hover:text-medical-600 transition">Specialties</Link>
+            <Link href="/doctors" className="hover:text-medical-600 transition">Doctors</Link>
+            <Link href="/appointment" className="hover:text-medical-600 transition">Appointment</Link>
+            <Link href="/contact" className="hover:text-medical-600 transition">Contact</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -41,11 +41,11 @@ export default function Navbar() {
           <div className="md:hidden mt-4 pb-4 border-t border-gray-100 flex flex-col gap-4 pt-4">
             <Link href="/" className="block text-medical-600 font-bold" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/about" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>About Us</Link>
-            <a href="/facilities.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Facilities</a>
-            <a href="/specialties.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Specialties</a>
-            <a href="/doctors.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Doctors</a>
-            <a href="/appointment.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Appointment</a>
-            <a href="/contact.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Contact</a>
+            <Link href="/facilities" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Facilities</Link>
+            <Link href="/specialties" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Specialties</Link>
+            <Link href="/doctors" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Doctors</Link>
+            <Link href="/appointment" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Appointment</Link>
+            <Link href="/contact" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
         )}
       </div>
