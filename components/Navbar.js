@@ -22,7 +22,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6 font-medium text-gray-700">
             <Link href="/" className="text-medical-600 font-bold">Home</Link>
-            <a href="/about.html" className="hover:text-medical-600 transition">About Us</a>
+            <Link href="/about" className="hover:text-medical-600 transition">About Us</Link>
             <a href="/facilities.html" className="hover:text-medical-600 transition">Facilities</a>
             <a href="/specialties.html" className="hover:text-medical-600 transition">Specialties</a>
             <a href="/doctors.html" className="hover:text-medical-600 transition">Doctors</a>
@@ -40,7 +40,7 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-100 flex flex-col gap-4 pt-4">
             <Link href="/" className="block text-medical-600 font-bold" onClick={() => setIsOpen(false)}>Home</Link>
-            <a href="/about.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>About Us</a>
+            <Link href="/about" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>About Us</Link>
             <a href="/facilities.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Facilities</a>
             <a href="/specialties.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Specialties</a>
             <a href="/doctors.html" className="block text-gray-700 hover:text-medical-600 font-medium" onClick={() => setIsOpen(false)}>Doctors</a>
