@@ -26,9 +26,9 @@ export default function Home() {
             <a href="tel:+916391004302" className="w-full sm:w-auto bg-white text-medical-700 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
               Call Reception
             </a>
-            <Link href="/appointment.html" className="w-full sm:w-auto bg-medical-600 hover:bg-medical-500 text-white font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center gap-2 border border-medical-500">
+            <a href="/appointment.html" className="w-full sm:w-auto bg-medical-600 hover:bg-medical-500 text-white font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center gap-2 border border-medical-500">
               Book Appointment
-            </Link>
+            </a>
           </div>
         </div>
       </header>
@@ -45,27 +45,27 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Services</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/specialties.html" className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-medical-500 group block">
+            <a href="/specialties.html" className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-medical-500 group block">
               <div className="w-16 h-16 bg-medical-100 text-medical-600 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
                 <i className="fa-solid fa-stethoscope"></i>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Specialties</h4>
               <p className="text-gray-600">Explore our wide range of medical specialties including Gynecology, Pediatrics, and Surgery.</p>
-            </Link>
-            <Link href="/doctors.html" className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-medical-500 group block">
+            </a>
+            <a href="/doctors.html" className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-medical-500 group block">
               <div className="w-16 h-16 bg-medical-100 text-medical-600 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
                 <i className="fa-solid fa-user-doctor"></i>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Our Doctors</h4>
               <p className="text-gray-600">Meet our team of experienced specialists dedicated to your health and well-being.</p>
-            </Link>
-            <Link href="/facilities.html" className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-medical-500 group block">
+            </a>
+            <a href="/facilities.html" className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-medical-500 group block">
               <div className="w-16 h-16 bg-medical-100 text-medical-600 rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-medical-600 group-hover:text-white transition">
                 <i className="fa-solid fa-hospital"></i>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Facilities</h4>
               <p className="text-gray-600">Discover our state-of-the-art infrastructure, 24/7 emergency care, and advanced diagnostics.</p>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -86,10 +86,10 @@ export default function Home() {
             <div className="md:w-1/3">
               <h3 className="text-xl font-bold mb-6">Quick Links</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about.html" className="hover:text-white transition">About Us</Link></li>
-                <li><Link href="/doctors.html" className="hover:text-white transition">Doctors</Link></li>
-                <li><Link href="/appointment.html" className="hover:text-white transition">Book Appointment</Link></li>
-                <li><Link href="/contact.html" className="hover:text-white transition">Contact Us</Link></li>
+                <li><a href="/about.html" className="hover:text-white transition">About Us</a></li>
+                <li><a href="/doctors.html" className="hover:text-white transition">Doctors</a></li>
+                <li><a href="/appointment.html" className="hover:text-white transition">Book Appointment</a></li>
+                <li><a href="/contact.html" className="hover:text-white transition">Contact Us</a></li>
               </ul>
             </div>
             <div className="md:w-1/3">
