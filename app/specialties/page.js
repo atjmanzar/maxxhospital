@@ -24,7 +24,7 @@ export default function Specialties() {
                 <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-2xl">
                   <i className="fa-solid fa-person-breastfeeding"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Gynecology & Obstetrics</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Gynecology & Maternity Services</h3>
               </div>
               <ul className="space-y-2 text-gray-600 ml-16 list-disc">
                 <li>Management of High-Risk Pregnancies</li>
@@ -40,7 +40,7 @@ export default function Specialties() {
                 <div className="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl">
                   <i className="fa-solid fa-baby"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Pediatrics (Child Care)</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Pediatrics & Child Care in Mau</h3>
               </div>
               <ul className="space-y-2 text-gray-600 ml-16 list-disc">
                 <li>Complete Vaccination/Immunization programs</li>

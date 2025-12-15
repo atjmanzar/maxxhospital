@@ -20,7 +20,7 @@ export default function Home() {
             Trusted Healthcare <br /> in <span className="text-medical-100">Mau</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow">
-            Compassionate care with advanced medical facilities right in your neighborhood.
+            The leading Multi-Speciality Hospital on Bypass Road, serving families from Mirzahadi Pura, Azamgarh, and Ballia with 24/7 Emergency Care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="tel:+916391004302" className="w-full sm:w-auto bg-white text-medical-700 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-1 flex items-center justify-center gap-2">

@@ -12,7 +12,8 @@ export default function Footer() {
               </div>
               <h2 className="text-2xl font-bold">Maxx Hospital</h2>
             </div>
-            <p className="text-gray-400">A Legacy of Compassion, A Future of Health.</p>
+            <p className="text-gray-400 mb-4">A Legacy of Compassion, A Future of Health.</p>
+            <p className="text-gray-500 text-sm">Proudly serving patients from Mau, Ghazipur, and surrounding Purvanchal districts. Located near SS Tower, Mau.</p>
           </div>
           <div className="md:w-1/3">
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
